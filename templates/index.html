@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Housing Application</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f9fa;
+            color: #212529;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            background: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+        }
+
+        .header {
+            background-color: #5a67d8;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .form-container {
+            padding: 20px 40px;
+        }
+
+        label {
+            display: block;
+            margin-top: 20px;
+            margin-bottom: 5px;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ced4da;
+            border-radius: 5px;
+            font-size: 14px;
+            box-sizing: border-box;
+        }
+
+        input[type="text"]:focus {
+            border-color: #5a67d8;
+            outline: none;
+            box-shadow: 0 0 5px rgba(90, 103, 216, 0.5);
+        }
+
+        .form-footer {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        input[type="submit"] {
+            background-color: #5a67d8;
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #434190;
+        }
+
+        @media (max-width: 768px) {
+            .form-container {
+                padding: 15px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">Housing Application</div>
+        <div class="form-container">
+            <form method="POST">
+                <label for="total_sqft">Total Square Feet:</label>
+                <input type="text" id="total_sqft" name="total_sqft">
+
+                <label for="bath">Bathrooms:</label>
+                <input type="text" id="bath" name="bath">
+
+                <label for="balcony">Balcony:</label>
+                <input type="text" id="balcony" name="balcony">
+
+                <label for="bedroom">Bedrooms:</label>
+                <input type="text" id="bedroom" name="bedroom">
+
+                <label for="price_per_sqft">Price Per Square Foot:</label>
+                <input type="text" id="price_per_sqft" name="price_per_sqft">
+
+                <label for="region_east">Region (East):</label>
+                <input type="text" id="region_east" name="Region_East">
+
+                <label for="region_north">Region (North):</label>
+                <input type="text" id="region_north" name="Region_North">
+
+                <label for="region_other">Region (Other):</label>
+                <input type="text" id="region_other" name="Region_Other">
+
+                <label for="region_outer">Region (Outer/Nearby Areas):</label>
+                <input type="text" id="region_outer" name="Region_Outer/Nearby Areas">
+
+                <label for="region_south">Region (South):</label>
+                <input type="text" id="region_south" name="Region_South">
+
+                <label for="region_west">Region (West):</label>
+                <input type="text" id="region_west" name="Region_West">
+
+                <div class="form-footer">
+                    <input type="submit" value="Submit Application">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
